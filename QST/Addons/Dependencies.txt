@@ -1,0 +1,44 @@
+Dependencies inside the [Addons] directory
+
+Assume that each [dir] contains dependencies with all files inside [dir] so when one modify
+any file in [dir] then rest vis inside [dir] should be tested.
+
+<in> - dependancies inside the project
+<out> - dependecies using additional packages and drivers
+
+[Arduino_Channels_Map]
+<in>
+	#1 None
+<out>
+	#2 None
+
+[Arduino_Pulse_Sequence]
+<in>
+	#1 [Driver/Arduino_Pulse_Generator/Configurate] Register_1.clt
+	#2 [Driver/Arduino_Pulse_Generator/Configurate] Register_2.clt
+	#3 [Driver/Arduino_Pulse_Generator/Configurate] Channel_Pulse_Stream.clt
+	#4 [Driver/Arduino_Pulse_Generator/Configurate] Set_All_Outputs.vi
+	#5 [Driver/Arduino_Pulse_Generator/Configurate] Set_Pulse_Multiple_Channels.vi
+	#6 [Arduino_Channels_Map] Get_Channels_Map.vi
+<out>
+	#1 None
+
+[Keithley_Configuration]
+<in>
+	#1 None
+<out>
+	#1 Keithley 622x LV 2009
+	#2 OpenG ver 4.0.1.9
+
+[Project_Manager]
+<in>
+	#1 None
+<out>
+	#1 None
+
+[Zurich_Configuration/Ver_1]
+<in>
+	#1 None
+<out>
+	#1 LabOne LabVIEW Driver rel. 22.02
+	#2 OpenG ver 4.0.1.9

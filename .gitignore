@@ -1,0 +1,29 @@
+# LabVIEW temporary files
+*.vi.bk
+*.lvproj.bk
+*.png
+*.jpg
+*.gif
+*.ico
+*.tmp
+*.dat
+*.log
+*.rpt
+*.zip
+
+# LabVIEW compilation files
+*.obj
+*.pdb
+*.dll
+*.exe
+
+# User preferences (LabVIEW specific)
+*.ini
+*.lvbitfile
+
+# LabVIEW compiled code
+*.mnu
+*.llb
+
+# LabVIEW project-specific files
+*.lvclass

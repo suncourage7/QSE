@@ -1,0 +1,18 @@
+Zurich Instruments 	HF2LI Lock-in Amplifier
+Keithley 		6220 Precision Current Source
+Homemade		Arduino Pulse Generator
+
+<In> dependencies
+[Initialize_Devices]
+	#1 [Drivers/Arduino_Pulse_Generator/Initialize] Initialize.vi
+[Configurate_All]
+	#1 [Zurich_Configuration/Ver_1] Send_Configuration_Zurich.vi
+	#2 [Keithley_Configuration] Send_Configuration_Keithley.vi
+	#3 [Arduino_Pulse_Sequence] Send_Init_States.vi
+	#4 [Arduino_Pulse_Sequence] Send_Pulse.vi
+	#5 [Drivers/Arduino_Pulse_Generator/Configurate] Channel_Pulse_Stream.ctl
+[Close_Devices]
+	#1 [Drivers/Arduino_Pulse_Generator/Close] Close.vi
+[Single_Measurement]
+	#1 [Drivers/Arduino_Pulse_Generator/Configurate] almost all vis
+	#2 [Keithley_Configuration] Send_Arm_Keithley.vi
